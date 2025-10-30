@@ -3,10 +3,6 @@ from models import Product
 
 app = FastAPI()
 
-@app.get("/")
-
-def greet():
-    return "Hello"
 
 products = [
     Product(id = 1, name = "Mobile", description = "Iphone", price = 999, quantity = 10),
